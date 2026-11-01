@@ -1,36 +1,30 @@
-COS 201 — Computer Programming I (Week 3)
+# COS 201 — Computer Programming I
+## Practical Exercises: Weeks 1–3
 
-Programs Included
+**Name:** CHINEDU CHIDUBEM ALVIN  
+**Matric Number:** 25/16181  
+**Programme:** Computer Science  
 
-1. SimpleCalculator.java — Performs addition, subtraction, multiplication, and division.
-2. AverageCalculator.java — Calculates the average of numbers entered by the user.
-3. ItemCost.java — Calculates the total cost of items using price and quantity.
+## Week 1
+- `week01/FirstProgram.java` — Displays course information, the importance of programming, and a learning goal.
 
-Requirements
+## Week 2
+- `week02/HelloWorld.java` — Displays a welcome message.
+- `week02/StudentProfile.java` — Displays student information.
 
-* Java Development Kit (JDK) installed.
-* A terminal or command prompt.
+## Week 3
+- `week03/SimpleCalculator.java` — Performs basic arithmetic operations.
+- `week03/AverageCalculator.java` — Calculates the average of numbers entered.
+- `week03/ItemCost.java` — Calculates the total cost of items.
 
-How to Run
+## Requirements
+- Java Development Kit (JDK)
+- A terminal or command prompt
 
-Compile and run each program using these commands:
+## How to Run
+Open a terminal in the repository folder and compile and run each program using its path. For example:
 
-SimpleCalculator
+`javac week01/FirstProgram.java`
+`java -cp week01 FirstProgram`
 
-javac SimpleCalculator.java
-
-java SimpleCalculator
-
-AverageCalculator
-
-javac AverageCalculator.java
-
-java AverageCalculator
-
-ItemCost
-
-javac ItemCost.java
-
-java ItemCost
-
-Each program accepts user input and displays the result.
+Repeat with the appropriate file path and class name for each program.
