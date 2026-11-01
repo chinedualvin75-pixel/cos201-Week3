@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class SimpleCalculator {
@@ -7,32 +8,19 @@ public class SimpleCalculator {
         System.out.print("Enter first number: ");
         double num1 = input.nextDouble();
 
-        System.out.print("Enter operator (+, -, *, /): ");
-        char operator = input.next().charAt(0);
-
         System.out.print("Enter second number: ");
         double num2 = input.nextDouble();
 
-        switch (operator) {
-            case '+':
-                System.out.println("Result: " + (num1 + num2));
-                break;
-            case '-':
-                System.out.println("Result: " + (num1 - num2));
-                break;
-            case '*':
-                System.out.println("Result: " + (num1 * num2));
-                break;
-            case '/':
-                if (num2 != 0) {
-                    System.out.println("Result: " + (num1 / num2));
-                } else {
-                    System.out.println("Cannot divide by zero.");
-                }
-                break;
-            default:
-                System.out.println("Invalid operator.");
+        System.out.println("Sum: " + (num1 + num2));
+        System.out.println("Difference: " + (num1 - num2));
+        System.out.println("Product: " + (num1 * num2));
+
+        if (num2 != 0) {
+            System.out.println("Quotient: " + (num1 / num2));
+        } else {
+            System.out.println("Division is undefined for a zero divisor.");
         }
 
         input.close();
     }
+}
