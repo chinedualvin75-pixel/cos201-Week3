@@ -5,22 +5,24 @@ public class AverageCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("How many numbers do you want to enter? ");
-        int count = input.nextInt();
+        System.out.print("Enter student name: ");
+        String name = input.nextLine();
 
-        if (count <= 0) {
-            System.out.println("Please enter a number greater than zero.");
-        } else {
-            double sum = 0;
+        System.out.print("Enter first score: ");
+        double score1 = input.nextDouble();
 
-            for (int i = 1; i <= count; i++) {
-                System.out.print("Enter number " + i + ": ");
-                sum += input.nextDouble();
-            }
+        System.out.print("Enter second score: ");
+        double score2 = input.nextDouble();
 
-            double average = sum / count;
-            System.out.println("Average: " + average);
-        }
+        System.out.print("Enter third score: ");
+        double score3 = input.nextDouble();
+
+        double total = score1 + score2 + score3;
+        double average = total / 3.0;
+
+        System.out.println("Student name: " + name);
+        System.out.println("Total score: " + total);
+        System.out.println("Average score: " + average);
 
         input.close();
     }
